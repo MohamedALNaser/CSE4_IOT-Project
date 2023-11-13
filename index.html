@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Liquid Level Monitring system </title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <!-- <nav class="navbar navbar-dark bg-primary"> -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+                <div class="container">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo_2.2.png" width="40" height="40"
+                            class="d-inline-block align-top img-fluid rounded-circle" alt="">
+                        <span>
+                            Liquid Level
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Home <span class="sr-only">(current)</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#opjective">opjective</a>
+                                    <a class="dropdown-item" href="#components">components</a>
+                                    <a class="dropdown-item" href="#operation">operation</a>
+                                    <a class="dropdown-item" href="#Application">Application</a>
+                                    <a class="dropdown-item" href="#refer">referances</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/iot_sys.html">IOT Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contact.html">contact</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0" method="get">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 border border-light "
+                                style="background-color: transparent;" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class=" intro col-12 col-sm-7 col-lg-5  border rounded">
+                    A liquid level monitoring system is an IoT-based project that allows users to remotely monitor the
+                    liquid level in a container.
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h1>content Of Project </h1>
+            <div class=" opjective " id="opjective">
+                <div class=" container ">
+                    <h2>opjective</h2>
+                    <div class="content row align-items-center">
+                        <div class="box-p col-12 col-sm-6 col-lg-7">
+                            <p>- The benefits of a liquid-level monitoring system include increased efficiency,
+                                cost-effectiveness, and improved safety. </p>
+                            <p>- By monitoring the liquid level in a container, users can avoid overfilling or
+                                underfilling, which can result in costly spills or damage to equipment.</p>
+                            <p>- The system can also track liquid usage, enabling users to optimize their processes and
+                                reduce waste. Additionally, the system can provide early warning of leaks or other
+                                issues, allowing for timely intervention and improved
+                                safety.
+                            </p>
+                        </div>
+                        <div class="box-img  col-12 col-sm-6 col-lg-5">
+                            <img src="./img/LLM_opj.jpeg" width="100%" height="400" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" components " id="components">
+                <div class=" container ">
+                    <h2>components</h2>
+                    <p>The components include:</p>
+                    <div class="content row">
+                        <div class="item col-12 col-sm">
+                            <div class="img-box">
+                                <img src="./img/component_1.0.jpeg" alt="">
+                            </div>
+                            <h4>Ultrasonic sensors</h4>
+                            <p>Measure liquid level using sound waves and reflections in units such as (mm) or (cm)
+                            </p>
+                        </div>
+                        <div class="item col-12 col-sm">
+                            <div class="img-box">
+                                <img src="./img/component_2.1.jpeg" alt="">
+                            </div>
+                            <h4>microcontroller Intel® Galileo Gen 2</h4>
+                            <p>Powerful microcontroller board enabling advanced liquid level monitoring applications
+                                with its robust features and performance</p>
+                        </div>
+                        <div class="item col-12 col-sm">
+                            <div class="img-box">
+                                <img src="./img/component_3.0.jpeg" alt="">
+                            </div>
+                            <h4>Wi-Fi or Ethernet module</h4>
+                            <p>Provides wireless or wired connectivity, facilitating remote monitoring of liquid levels.
+                            </p>
+                        </div>
+                        <div class="item col-12 col-sm-6">
+                            <div class="img-box">
+                                <img src="./img/component_4.0.jpeg" alt="">
+                            </div>
+                            <h4>web server or cloud platform</h4>
+                            <p>Aggregate , Data Storage , Inferences.
+                                <br> cloud platforms: AWS,Azura,GCP
+                            </p>
+                        </div>
+                        <div class="item col-12 col-sm-6">
+                            <div class="img-box">
+                                <img src="./img/component_5.0.jpeg" alt="">
+                            </div>
+                            <h4>actuators</h4>
+                            <p>They operate in the reverse direction of sensors. They take an electrical input and turns
+                                it into physical action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" operation " id="operation">
+                <div class=" container ">
+                    <h2>How the app Works</h2>
+                    <p>This system is beneficial in industries where liquids are stored in large containers or tanks,
+                        such as chemical plants or oil refineries</p>
+                    <p>The system uses ultrasonic sensors to measure the liquid level and transmit the data to a
+                        microcontroller.
+                    </p>
+                    <p>The microcontroller processes the data and sends it to a web server via the internet.</p>
+                    <p>Users can then access the data from a web browser or mobile app and receive real-time updates on
+                        the liquid level.</p>
+                </div>
+            </div>
+
+            <div class=" Application " id="Application">
+                <div class=" container ">
+
+                    <h2>Application</h2>
+                    <div class="row ">
+                        <div class="box-img col-12 col-sm-4">
+                            <img src="./img/appliction.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <div class="content col-12 col-sm-8">
+                            <p>Liquid-level monitoring systems have applications in various industries, including
+                                chemical plants, oil refineries, water treatment plants, and food and beverage
+                                manufacturing.
+                            </p>
+                            <p>They can monitor the level of chemicals, oil, water, or other liquids in large containers
+                                or tanks.
+                            </p>
+                            <p>The systems can also be integrated with other IoT devices or methods, such as industrial
+                                automation or predictive maintenance, to improve overall efficiency and productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" refer " id="refer">
+                <div class=" container ">
+
+                    <h2>referances</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class=" container">
+                <h1> Footer Items</h1>
+                <div class="row row-one">
+                    <ul class="col-12 col-sm-12">
+                        <li class=" col-12 col-sm-6">
+                            <h4>Home section</h4>
+                            <ul>
+                                <li>
+                                    <a href="#components">components</a>
+                                </li>
+                                <li>
+                                    <a href="#opjective">opjective</a>
+                                </li>
+                                <li>
+                                    <a href="#operation">operation</a>
+                                </li>
+                                <li>
+                                    <a href="#Application">Application</a>
+                                </li>
+                                <li>
+                                    <a href="#refer">referances</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foot-item col-12 col-sm-3">
+                            <a class="foot-link" href="./pages/iot_sys.html">IOT Process</a>
+                        </li>
+                        <li class="foot-item col-12 col-sm-3">
+                            <a class="foot-link" href="./pages/contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="row align-items-center">
+                    <div class=" footLink col-12 col-sm-6 ">
+                        <a class="navbar-brand" href="#">
+                            <img src="./img/logo_2.2.png" width="40" height="40"
+                                class="d-inline-block align-top img-fluid rounded-circle" alt="">
+                            <span>
+                                Liquid Level
+                            </span>
+                        </a>
+                    </div>
+                    <div class=" copy-Right col-12 col-sm-6">
+                        @Copy-Right by Mohamed Naser 2023
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src=" node_modules/jquery/dist/jquery.min.js "></script>
+    <script src=" node_modules/tether/dist/js/tether.min.js "></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js "></script>
+    <script src=" node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
+
+</html>

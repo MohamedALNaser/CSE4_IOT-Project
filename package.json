@@ -1,0 +1,14 @@
+{
+    "name": "iot_project",
+    "version": "1.0.0",
+    "description": "packages of project ",
+    "main": "index.html",
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "jquery": "^3.6.0",
+        "tether": "^1.4.7"
+    },
+    "scripts": {},
+    "author": "Mohammed Naser",
+    "license": "ISC"
+}
