@@ -103,6 +103,7 @@
   padding: 0;
   list-style: none;
   display: flex;
+  padding-left: 18px;
 }
 .page footer .container .row ul li {
   text-transform: capitalize;
