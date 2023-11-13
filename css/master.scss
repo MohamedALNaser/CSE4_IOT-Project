@@ -192,11 +192,12 @@
                     }
                     li.foot-item {
                         position: relative;
+                        padding-left: 35px;
                         &::before {
                             content: "";
                             position: absolute;
                             top: 7px;
-                            left: -5px;
+                            left: 15px;
                             border: 6px solid #fff;
                             border-radius: 2px;
                             -webkit-border-radius: 2px;
