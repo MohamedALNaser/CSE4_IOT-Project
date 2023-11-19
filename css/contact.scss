@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.teams {
+    justify-content: space-around;
+    text-align: center;
+    background-color: #343a40;
+    padding: 20px 0 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    .member {
+        margin: 0 2px;
+        box-shadow: 3px 3px 4px 2px #eee;
+        border-radius: 10px;
+        padding-top: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .box-img {
+            img {}
+        }
+        .info {
+            h4 {}
+            p {}
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    a {
+                        text-decoration: none;
+                        background-color: #fff;
+                        padding: 3px;
+                        border-radius: 3px;
+                        &:hover {
+                            text-decoration: none !important;
+                        }
+                        i {}
+                    }
+                }
+            }
+        }
+    }
+}
