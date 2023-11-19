@@ -5,6 +5,11 @@
     // background-color: red;
 }
 
+iframe {
+    min-width: 275px;
+    min-height: 155px;
+}
+
 .container {}
 
 .page {
@@ -98,6 +103,9 @@
                         .img-box {
                             height: 225px;
                             img {
+                                max-width: 300px;
+                                min-width: 275px;
+                                width: 100%;
                                 height: 225px;
                             }
                         }
@@ -119,17 +127,42 @@
             background-color: #343a4080;
             .container {
                 h2 {}
-                ul {
-                    li {}
-                }
             }
         }
         .refer {
             .container {
                 h2 {}
-                ul {
-                    li {
-                        a {}
+                .row {
+                    .box-img {
+                        text-align: center;
+                        // background-color: #495057;
+                        box-shadow: 1px 1px 2px 2px #eee;
+                        // margin: 2px;
+                        padding-top: 20px;
+                        a {
+                            img {
+                                max-width: 100%;
+                                // min-width: 275px;
+                                width: 100%;
+                                border-radius: 10px;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                -ms-border-radius: 10px;
+                                -o-border-radius: 10px;
+                            }
+                        }
+                        .info {
+                            a {
+                                color: #212529;
+                                &:hover {
+                                    color: #dee2e6;
+                                }
+                                h4 {
+                                    margin: 8px 0;
+                                }
+                            }
+                            p {}
+                        }
                     }
                 }
             }
