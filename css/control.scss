@@ -63,7 +63,11 @@ input {
             margin: 10px 0;
         }
     }
-    .control-option>div {
-        margin-bottom: 35px;
+    .control-system {
+        text-align: center;
+        .control-option>div {
+            margin-bottom: 35px;
+            justify-content: center;
+        }
     }
 }

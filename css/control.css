@@ -59,6 +59,10 @@ input {
 .control-section .container > div {
   margin: 10px 0;
 }
-.control-section .control-option > div {
+.control-section .control-system {
+  text-align: center;
+}
+.control-section .control-system .control-option > div {
   margin-bottom: 35px;
+  justify-content: center;
 }/*# sourceMappingURL=control.css.map */

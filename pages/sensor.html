@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+    <title>Iot System Processing</title>
+    <link rel="stylesheet" href="./../css/master.css">
+    <link rel="stylesheet" href="./../css/control.css">
+    <link rel="icon" href="./../img/logo_2.2.png" type="image/x-icon">
+    <style>
+        .box-img {
+            margin-bottom: 50px;
+        }
+
+        .page section {
+            background-color: #17a2b8;
+            color: #000;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header">
+            <!-- <nav class="navbar navbar-dark bg-primary"> -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+                <div class="container">
+
+                    <a class="navbar-brand" href="./../index.html">
+                        <img src="./../img/logo_2.2.png" width="40" height="40"
+                            class="d-inline-block align-top img-fluid rounded-circle" alt="">
+                        <span>
+                            Liquid Level
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./../index.html">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./iot_sys.html">IOT Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">contact</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0" method="get">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 border border-light "
+                                style="background-color: transparent;" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class=" intro col-12 col-sm-7 col-lg-5  border rounded">
+                    A liquid level monitoring system is an IoT-based project that allows users to remotely monitor the
+                    liquid level in a container.
+                </div>
+            </div>
+        </header>
+        <section>
+            <h1>sensor information </h1>
+            <div class="sensor-section">
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="box-img ">
+                            <img src="./../img/component_1.1.jpeg" style="
+                                border-radius: 8px;
+                                " alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Ultrasonic sensors are commonly used for a variety of applications, including measuring
+                            liquid levels. These sensors utilize ultrasonic waves to detect and measure distances to
+                            objects or surfaces. Here's how ultrasonic sensors work for liquid level measurement:
+                        </p>
+
+                        <ol>
+                            <li>
+                                Principle: Ultrasonic sensors emit high-frequency sound waves (ultrasonic waves) and
+                                measure the time it takes for the waves to travel to the liquid surface and back.
+                            </li>
+
+                            <li>
+                                Setup: The ultrasonic sensor is typically mounted above the liquid container or tank,
+                                facing downward towards the liquid surface. It should be positioned in a way that avoids
+                                obstructions and allows for accurate measurement.
+                            </li>
+                            <li>
+                                Emitting and receiving signals: The sensor emits a burst of ultrasonic waves, which
+                                travel towards the liquid surface. When the waves encounter the liquid surface, they
+                                reflect back towards the sensor.
+                            </li>
+                            <li>
+                                Time measurement: The sensor measures the time it takes for the ultrasonic waves to
+                                travel to the liquid surface and return. Since the speed of sound is known, the distance
+                                to the liquid surface can be calculated using the formula: distance = (speed of
+                                sound × time) / 2.
+                            </li>
+                            <li>
+                                Liquid level calculation: Once the distance to the liquid surface is determined, it can
+                                be used to calculate the liquid level in the container or tank. This calculation may
+                                involve subtracting the distance from the total container height or using calibration
+                                values specific to the setup.
+                            </li>
+                            <li>
+                                Output and monitoring: The measured liquid level can be displayed on a screen,
+                                transmitted to a data logging system, or used for control and monitoring purposes in
+                                automated systems.
+                            </li>
+
+                        </ol>
+                        <p>
+                            Ultrasonic sensors offer advantages such as non-contact measurement, suitable for various
+                            liquid types, and can work well in challenging environments. However, factors like
+                            temperature, humidity, and presence of foam or turbulence can affect the accuracy
+                            of the measurement. It's important to select an ultrasonic sensor suitable for the specific
+                            application and consider any limitations or environmental factors that may impact its
+                            performance.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <h1>potentiometer information </h1>
+            <div class="potentiometer-section">
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="box-img ">
+                            <img src="./../img/component_1.2.jpeg" style="
+                                border-radius: 8px;
+                                " alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Represent the measured value from an ultrasonic sensor using a potentiometer, you can create
+                            a visual representation or mimic the sensor output using the potentiometer as an analog
+                            indicator. Here's how you can do it:
+                        </p>
+                        <ol>
+
+                            <li>
+                                Determine the range: Determine the range of measurement provided by the ultrasonic
+                                sensor. For example, if the ultrasonic sensor can measure distances from 0 to 1 meter,
+                                you'll need to represent this range using the potentiometer.
+                            </li>
+                            <li>
+
+                                Select a suitable potentiometer: Choose a potentiometer that has a resistance range and
+                                physical rotation angle suitable for your desired representation. Ensure that the
+                                resistance range covers the measurement range of the ultrasonic sensor.
+                            </li>
+                            <li>
+
+                                Connect the potentiometer: Connect the power supply and ground to the outer terminals of
+                                the potentiometer. Connect the wiper or output terminal of the potentiometer to an
+                                analog input pin of a microcontroller or an analog-to-digital converter (ADC) module.
+                            </li>
+                            <li>
+
+                                4. Read the ultrasonic sensor output: Program your microcontroller or ADC to read the
+                                output value from the ultrasonic sensor. This value should correspond to the liquid
+                                level measurement.
+                            </li>
+                            <li>
+
+                                Map the ultrasonic sensor output to the potentiometer: Map the output value from the
+                                ultrasonic sensor to the resistance value of the potentiometer. You can use the Arduino
+                                map() function or a custom mapping algorithm to convert the ultrasonic sensor
+                                output range to the resistance range of the potentiometer.
+                            </li>
+                            <li>
+
+                                Set the potentiometer position: Adjust the position of the potentiometer's wiper based
+                                on the mapped resistance value. This will visually represent the measured value from the
+                                ultrasonic sensor.
+                            </li>
+                        </ol>
+                        <p>
+
+                            By adjusting the potentiometer's wiper position, you can visually simulate the measured
+                            value from the ultrasonic sensor on a physical analog indicator. Keep in mind that this
+                            representation is only visual and does not provide the actual measurement capabilities
+                            of an ultrasonic sensor.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <h1>potentiometer Using </h1>
+            <div class="potentiometer-section">
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="box-img ">
+                            <img src="./../img/component_1.3.jpeg" style="
+                                border-radius: 8px;
+                                " alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            how you can map the range of a 1-meter tank to the range of a potentiometer:
+                        </p>
+                        <ol>
+                            <li>
+                                Tank Range: 0 to 1 meter
+                            </li>
+                            <li>
+                                Potentiometer Range: Let's assume you have a potentiometer with a total resistance of
+                                10,000 ohms.
+                            </li>
+                            <li>
+                                Mapping: You can map the tank range to the potentiometer range using a simple linear
+                                mapping.
+                                <ul style="padding-left: 25px;">
+                                    <li>
+                                        Tank Level 0 meters maps to Potentiometer Resistance 0 ohms.
+                                    </li>
+                                    <li>
+                                        Tank Level 1 meter maps to Potentiometer Resistance 10,000 ohms.
+                                    </li>
+                                </ul>
+                                <p>
+                                    This assumes a direct proportional mapping, where the resistance changes linearly
+                                    with the tank level.
+                                </p>
+                            </li>
+                            <li>
+                                Readings: When you measure the liquid level using the ultrasonic sensor, you'll get a
+                                value between 0 and 1 meter. Let's call this value "tankLevel".
+                            </li>
+                            <li>
+                                Mapping to Potentiometer Resistance: To map the "tankLevel" value to the resistance
+                                value for the potentiometer, you can use the following formula:
+                                <ul style="padding-left: 25px;">
+                                    <li>
+                                        Potentiometer Resistance = tankLevel * 10,000 ohms
+                                    </li>
+                                    <li>
+                                        For example, if the "tankLevel" is 0.5 meters, the corresponding potentiometer
+                                        resistance would be:
+                                    </li>
+
+                                    <li>
+                                        Potentiometer Resistance = 0.5 * 10,000 ohms = 5,000 ohms
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                Set Potentiometer Position: Adjust the wiper position of the potentiometer to match the
+                                calculated resistance value. This will visually represent the measured liquid level on
+                                the potentiometer.
+                            </li>
+
+                        </ol>
+                        <p>
+
+                            Remember to calibrate and test your setup to ensure accurate mapping and representation of
+                            the liquid level using the potentiometer.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class=" container">
+                <h1> Footer Items</h1>
+                <div class="row row-one justify-content-center">
+                    <ul class="row col-12">
+                        <li class="foot-item col-12 col-sm-4 ">
+                            <a class="foot-link" href="./../index.html">Home</a>
+                        </li>
+                        <li class="foot-item col-12 col-sm-4">
+                            <a class="foot-link" href="./iot_sys.html">IOT Process</a>
+                        </li>
+                        <li class="foot-item col-12 col-sm-4">
+                            <a class="foot-link" href="./contact.html">contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="row align-items-center">
+                    <div class=" footLink col-12 col-sm-6 ">
+                        <a class="navbar-brand" href="#">
+                            <img src="./../img/logo_2.2.png" width="40" height="40"
+                                class="d-inline-block align-top img-fluid rounded-circle" alt="">
+                            <span>
+                                Liquid Level
+                            </span>
+                        </a>
+                    </div>
+                    <div class=" copy-Right col-12 col-sm-6">
+                        @Copy-Right by Mohamed Naser 2023
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="./../js/control.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+    <script src="./../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./../node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js "></script>
+    <script src="./../node_modules/popper.js/dist/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
