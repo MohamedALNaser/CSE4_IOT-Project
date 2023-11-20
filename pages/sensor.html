@@ -21,6 +21,10 @@
             font-size: 22px;
             font-weight: 500;
         }
+
+        ol {
+            padding-left: 25px;
+        }
     </style>
 
 </head>
@@ -55,6 +59,17 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="./iot_sys.html">IOT Process</a>
                             </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sensors </a>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#sensor-section">Sensor Information</a>
+                                    <a class="dropdown-item" href="#potentiometer-section">Potentiometer Section</a>
+                                    <a class="dropdown-item" href="#potentiometer-using">potentiometer Using</a>
+                                </div>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html">contact</a>
                             </li>
@@ -77,7 +92,7 @@
         </header>
         <section>
             <h1>sensor information </h1>
-            <div class="sensor-section">
+            <div class="sensor-section" id="sensor-section">
                 <div class="container ">
                     <div class="row justify-content-center">
                         <div class="box-img ">
@@ -141,7 +156,7 @@
                 </div>
             </div>
             <h1>potentiometer information </h1>
-            <div class="potentiometer-section">
+            <div class="potentiometer-section" id="potentiometer-section">
                 <div class="container ">
                     <div class="row justify-content-center">
                         <div class="box-img ">
@@ -207,7 +222,7 @@
                 </div>
             </div>
             <h1>potentiometer Using </h1>
-            <div class="potentiometer-section">
+            <div class="potentiometer-using" id="potentiometer-using">
                 <div class="container ">
                     <div class="row justify-content-center">
                         <div class="box-img ">
